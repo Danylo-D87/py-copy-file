@@ -12,5 +12,5 @@ def copy_file(command: str) -> None:
         return
     if not os.path.exists(name1):
         return
-    with open(name1, "r") as f1, open(name2, "w") as f2:
+    with open(name1, "rb") as f1, open(name2, "wb") as f2:
         f2.write(f1.read())
